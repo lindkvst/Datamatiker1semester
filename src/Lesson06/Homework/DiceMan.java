@@ -50,7 +50,7 @@ public class DiceMan {
     public static String[] choices = {
             "Nothing",
             "eats Breakfast",
-            "Studies Something Boring",
+            "Studies Something Boring" ,
             "Goes Swimming",
             "Goes Fishing",
             "Calls Mom",
