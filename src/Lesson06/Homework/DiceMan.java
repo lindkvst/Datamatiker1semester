@@ -49,12 +49,12 @@ public class DiceMan {
     // laver array
     public static String[] choices = {
             "Nothing",
-            "eats Breakfast",
-            "Studies Something Boring" ,
-            "Goes Swimming",
-            "Goes Fishing",
-            "Calls Mom",
-            "Goes Back to Bed"
+            "eats Breakfast 🥐😛",
+            "Studies Something Boring 📚😢" ,
+            "Goes Swimming 🏊‍😅️",
+            "Goes Fishing 🎣😎",
+            "Calls Mom 📞🤠",
+            "Goes Back to Bed 😴💤"
     };
 
 

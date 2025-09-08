@@ -18,6 +18,7 @@ public static void DiceManChoice() {
     WriteChoice(d1);
     DiceMan d2 = new DiceMan("Mrs. DiceyD", 20, false, 3);
     WriteChoice(d2);
+
 }
 
 
@@ -47,9 +48,11 @@ public static void DiceManChoice() {
                         bedCount++;
                     }
                     //linje til test af forceBed if statement
-                    System.out.println("| bedCount = " + bedCount + " |");
+                    //System.out.println("| bedCount = " + bedCount + " |");
 
+                    System.out.println("You have rolled " + diceValue);
                     System.out.print(name + " " + choices[diceValue]); // navn og valg ud fra terningeslag
+                    //System.out.print(" You're score is " + (gameCount + 1 - bedCount));
 
                     if (bedMax == bedCount) {//Spillet sluttes hvis DiceMan sendes i seng BedMax gange
                         d.setForceBed(true);
