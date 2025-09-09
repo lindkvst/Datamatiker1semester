@@ -48,7 +48,7 @@ public static void DiceManChoice() {
                         bedCount++;
                     }
                     //linje til test af forceBed if statement
-                    //System.out.println("| bedCount = " + bedCount + " |");
+                    System.out.println("| bedCount = " + bedCount + " |");
 
                     System.out.println("You have rolled " + diceValue);
                     System.out.print(name + " " + choices[diceValue]); // navn og valg ud fra terningeslag
