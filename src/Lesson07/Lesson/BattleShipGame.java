@@ -22,16 +22,27 @@ public class BattleShipGame {
         s1.placeShip(placement);
 
         while (!isSunk) {
-            System.out.println("Sunk Status: " + isSunk);
-            int guess = gh.askNumber("Where do you want to hit it?");
-            s1.checkHit(guess);
-            s1.checkSunk();
-            isSunk = s1.getSunk();
-            gh.gameCountInc(); //inkremerer hvor mange runder, der bruges på gæt
+            //nedenstående viser SunkStatus
+            //System.out.println("Sunk Status: " + isSunk);
 
+            //bruger askNumber() metoden til at få en int som svar fra brugeren.
+            int guess = gh.askNumber("Where do you want to hit it?");
+
+            //undersøger om gættet rammer skibet
+            s1.checkHit(guess);
+
+            //undersøger om skibet nu er sunket.
+            s1.checkSunk();
+
+            //ændrer lokal variabel hvis skibet er sunket.
+            isSunk = s1.getSunk();
+
+            //viser antal ture, hvis skibet er sunket i denne runde.
             if (isSunk) {
                 System.out.printf("You've completed the game in %d turns. Congrats!", gh.getGameCount() );
             }
+
+            gh.gameCountInc(); //inkremerer hvor mange runder, der er brugt på gæt
         }
     }
 
